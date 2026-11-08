@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO UTAMA ===== -->
+    <title>Garage A3K | Bengkel Mobil Profesional di Saga, Kabupaten Tangerang</title>
+    <meta name="description" content="Garage A3K, bengkel mobil terpercaya di Saga, Kabupaten Tangerang, Banten. Servis berkala, tune up, spooring balancing, overhaul mesin, AC, rem, dan diagnosa komputer. Booking via WhatsApp.">
+    <meta name="keywords" content="bengkel mobil Saga, bengkel mobil Kabupaten Tangerang, bengkel mobil Tangerang, servis mobil Saga, tune up mobil Tangerang, spooring balancing Tangerang, servis AC mobil Tangerang, ganti oli mobil Tangerang, bengkel mobil terdekat, Garage A3K">
+    <meta name="author" content="Garage A3K">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- ===== SEO LOKAL (GEO) ===== -->
+    <meta name="geo.region" content="ID-BT">
+    <meta name="geo.placename" content="Saga, Kabupaten Tangerang">
+    <meta name="geo.position" content="-6.2000;106.4500">
+    <meta name="ICBM" content="-6.2000, 106.4500">
+
+    <!-- ===== OPEN GRAPH (WhatsApp, Facebook) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Garage A3K">
+    <meta property="og:title" content="Garage A3K | Bengkel Mobil di Saga, Kabupaten Tangerang">
+    <meta property="og:description" content="Servis mobil lengkap di Saga, Kabupaten Tangerang. Booking cepat via WhatsApp.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- ===== STRUCTURED DATA (Google Local Business) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Garage A3K",
+      "description": "Bengkel mobil profesional di Saga, Kabupaten Tangerang: servis berkala, tune up, spooring balancing, overhaul mesin, AC, rem, dan diagnosa komputer.",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200",
+      "telephone": "+62895321168652",
+      "priceRange": "Rp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Saga",
+        "addressLocality": "Kabupaten Tangerang",
+        "addressRegion": "Banten",
+        "postalCode": "15610",
+        "addressCountry": "ID"
+      },
+      "areaServed": ["Saga", "Kabupaten Tangerang", "Tangerang", "Banten"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Palet warna mengikuti banner Garage A3: tosca (teal), emas, hitam, silver
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: { 50: '#e6f7f6', 400: '#3cc6c1', 500: '#1fb5b0', 600: '#14a3a0', 700: '#0e8a88' },
+                        gold: { DEFAULT: '#f5a623', dark: '#d98a0b' }
+                    }
+                }
+            }
+        };
+    </script>
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- Icons & Animation -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        :root {
+            --primary: #111111;
+            --accent: #14a3a0;
+            --gold: #f5a623;
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: var(--primary);
+        }
+
+        h1, h2, h3, .nav-logo {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .page-content {
+            display: none;
+            min-height: 100vh;
+        }
+
+        .page-content.active {
+            display: block;
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .nav-link.active {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .hero-minimal {
+            background: linear-gradient(135deg, #ffffff 0%, #e6f7f6 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .text-justify { text-align: justify; }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #1fb5b0; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="nav-logo text-2xl font-black tracking-tight cursor-pointer" onclick="navigateTo('home')">
+                GARAGE<span class="text-gold"> A3K</span>
+            </div>
+
+            <div class="hidden md:flex space-x-8 font-semibold text-sm tracking-wide">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="nav-link transition-colors duration-300 py-2">Beranda</a>
+                <a href="javascript:void(0)" onclick="navigateTo('services')" class="nav-link transition-colors duration-300 py-2">Layanan</a>
+                <a href="javascript:void(0)" onclick="navigateTo('about')" class="nav-link transition-colors duration-300 py-2">Tentang</a>
+                <a href="javascript:void(0)" onclick="navigateTo('gallery')" class="nav-link transition-colors duration-300 py-2">Galeri</a>
+                <a href="javascript:void(0)" onclick="navigateTo('pricing')" class="nav-link transition-colors duration-300 py-2">Paket</a>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="nav-link transition-colors duration-300 py-2">Kontak</a>
+            </div>
+
+            <button onclick="sendWhatsApp('Halo Garage A3K, saya ingin konsultasi gratis mengenai kendala mobil saya.')" class="hidden md:block bg-rose-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-rose-700 transition transform hover:scale-105">
+                Konsultasi Gratis
+            </button>
+
+            <button id="mobile-menu-btn" class="md:hidden" aria-label="Buka menu"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU CONTAINER -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-white z-[110] hidden flex flex-col p-8 space-y-6 text-2xl font-bold">
+        <button id="close-menu" class="self-end" aria-label="Tutup menu"><i data-lucide="x" class="w-10 h-10"></i></button>
+        <a href="javascript:void(0)" onclick="navigateTo('home')" class="mobile-link">Beranda</a>
+        <a href="javascript:void(0)" onclick="navigateTo('services')" class="mobile-link">Layanan</a>
+        <a href="javascript:void(0)" onclick="navigateTo('about')" class="mobile-link">Tentang</a>
+        <a href="javascript:void(0)" onclick="navigateTo('gallery')" class="mobile-link">Galeri</a>
+        <a href="javascript:void(0)" onclick="navigateTo('pricing')" class="mobile-link">Paket</a>
+        <a href="javascript:void(0)" onclick="navigateTo('contact')" class="mobile-link">Kontak</a>
+    </div>
+
+    <!-- MAIN PAGES CONTAINER -->
+    <main class="pt-20">
+
+        <!-- PAGE 1: BERANDA -->
+        <section id="home" class="page-content active">
+            <!-- Hero Simpel -->
+            <div class="hero-minimal min-h-[80vh] flex items-center px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-5xl md:text-8xl font-black tracking-tight mb-6" data-aos="fade-up">
+                        Garage <br><span class="text-gold">A3K.</span>
+                        <span class="sr-only">Bengkel Mobil di Saga, Kabupaten Tangerang</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                        Bengkel mobil modern di Saga, Kabupaten Tangerang dengan standar teknologi terkini. Kami fokus pada kualitas teknis dan kepuasan pengalaman pelanggan di setiap detail servis.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                        <button onclick="navigateTo('services')" class="bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition">Mulai Perawatan</button>
+                        <button onclick="navigateTo('about')" class="border-2 border-gray-200 px-10 py-4 rounded-full font-bold text-lg hover:border-black transition">Pelajari Filosofi Kami</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konten Panjang Beranda -->
+            <div class="py-24 max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-20 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl font-bold mb-8">Standar Baru Perawatan Otomotif</h2>
+                        <div class="space-y-6 text-gray-600 text-justify leading-loose">
+                            <p>Di Garage A3K, kami memahami bahwa kendaraan Anda lebih dari sekadar alat transportasi; ia adalah investasi berharga dan bagian penting dari mobilitas harian Anda. Oleh karena itu, kami menerapkan protokol servis yang ketat yang biasanya hanya ditemukan di bengkel resmi manufaktur papan atas.</p>
+                            <p>Visi kami adalah mendemokrasikan layanan teknis berkualitas tinggi bagi warga Saga dan sekitarnya di Kabupaten Tangerang. Kami menggabungkan peralatan diagnostik komputerisasi dengan sentuhan tangan teknisi ahli yang memiliki pengalaman di berbagai brand otomotif dunia. Setiap baut yang kami kencangkan adalah janji akan keamanan perjalanan Anda.</p>
+                            <p>Kami tidak hanya mengganti suku cadang, kami menganalisis penyebab utama kerusakan untuk mencegah masalah serupa di masa depan. Pendekatan proaktif ini telah menghemat jutaan rupiah bagi pelanggan kami dalam jangka panjang.</p>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200" class="rounded-3xl shadow-2xl" alt="Layanan bengkel mobil Garage A3K di Saga, Kabupaten Tangerang" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="mt-32 text-center" data-aos="fade-up">
+                    <h3 class="text-4xl font-bold mb-12">Mengapa Memilih Garage A3K?</h3>
+                    <div class="grid md:grid-cols-4 gap-10">
+                        <div class="p-8 border rounded-3xl hover:border-rose-500 transition">
+                            <i data-lucide="shield-check" class="w-12 h-12 text-rose-600 mx-auto mb-6"></i>
+                            <h4 class="font-bold text-xl mb-4">Garansi Resmi</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Setiap pengerjaan di bengkel kami dilengkapi dengan jaminan garansi sparepart dan jasa selama 6 bulan atau 10.000 KM.</p>
+                        </div>
+                        <div class="p-8 border rounded-3xl hover:border-rose-500 transition">
+                            <i data-lucide="cpu" class="w-12 h-12 text-rose-600 mx-auto mb-6"></i>
+                            <h4 class="font-bold text-xl mb-4">Diagnosis Digital</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Menggunakan scanner OBD2 terbaru yang mendukung 99% merk mobil di pasar Indonesia untuk akurasi masalah 100%.</p>
+                        </div>
+                        <div class="p-8 border rounded-3xl hover:border-rose-500 transition">
+                            <i data-lucide="users" class="w-12 h-12 text-rose-600 mx-auto mb-6"></i>
+                            <h4 class="font-bold text-xl mb-4">Teknisi Ahli</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Seluruh mekanik kami wajib memiliki sertifikasi kompetensi nasional dan mengikuti training teknologi hybrid berkala.</p>
+                        </div>
+                        <div class="p-8 border rounded-3xl hover:border-rose-500 transition">
+                            <i data-lucide="clock" class="w-12 h-12 text-rose-600 mx-auto mb-6"></i>
+                            <h4 class="font-bold text-xl mb-4">Transparansi</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Anda dapat memantau pengerjaan melalui ruang tunggu kaca atau menerima update foto/video melalui WhatsApp secara real-time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: LAYANAN -->
+        <section id="services" class="page-content py-24 px-6 bg-slate-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20 text-center">
+                    <h2 class="text-5xl font-black mb-6">Spesialis Kami</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">Kami menawarkan spektrum layanan teknis otomotif yang komprehensif di Saga, Kabupaten Tangerang, mulai dari pemeliharaan preventif hingga restorasi sistem mekanikal yang kompleks.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Detail Layanan 1 -->
+                    <div class="bg-white p-12 rounded-[2rem] shadow-sm flex flex-col justify-between" data-aos="fade-up">
+                        <div>
+                            <div class="w-16 h-16 bg-rose-50 rounded-2xl flex items-center justify-center mb-8"><i data-lucide="settings" class="text-rose-600"></i></div>
+                            <h3 class="text-3xl font-bold mb-6">Sistem Transmisi & Mesin</h3>
+                            <div class="space-y-4 text-gray-600 text-justify mb-10">
+                                <p>Mesin adalah jantung dari kendaraan Anda. Di Garage A3K, pengerjaan mesin (Overhaul) dilakukan di ruangan khusus yang bebas debu untuk memastikan tidak ada kontaminan yang masuk ke dalam blok mesin. Kami menggunakan alat ukur presisi mikron untuk memastikan setiap komponen sesuai dengan spesifikasi pabrik.</p>
+                                <p>Layanan transmisi kami mencakup kuras oli matic menggunakan mesin ATF Changer yang mampu membersihkan sisa kotoran di dalam torque converter secara menyeluruh, berbeda dengan metode tap oli biasa.</p>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-2 gap-4 text-sm font-bold">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> Major Overhaul</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> ATF Flushing</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> Carbon Cleaning</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> Valve Adjustment</li>
+                        </ul>
+                    </div>
+
+                    <!-- Detail Layanan 2 -->
+                    <div class="bg-white p-12 rounded-[2rem] shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                        <div>
+                            <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-8"><i data-lucide="activity" class="text-amber-600"></i></div>
+                            <h3 class="text-3xl font-bold mb-6">Diagnostik & Elektrikal</h3>
+                            <div class="space-y-4 text-gray-600 text-justify mb-10">
+                                <p>Mobil modern kini lebih banyak dikontrol oleh modul elektronik (ECU). Kami memiliki perangkat lunak lisensi resmi untuk melakukan reset, pemrograman ulang, hingga kalibrasi sensor-sensor ADAS (Advanced Driver Assistance Systems) yang biasanya hanya bisa dilakukan di dealer resmi.</p>
+                                <p>Kami juga menangani masalah kelistrikan rumit seperti korsleting tersembunyi, penggantian wiring harness, hingga perbaikan instrumen cluster yang mati total dengan tingkat keberhasilan yang tinggi.</p>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-2 gap-4 text-sm font-bold">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> ECU Remapping</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> Wiring Restoration</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> Sensor Calibration</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-500"></i> Battery Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section Layanan Tambahan -->
+                <div class="mt-24 p-12 bg-black text-white rounded-[3rem] overflow-hidden relative">
+                    <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <h3 class="text-4xl font-bold mb-8">Kaki-kaki & Ban (Undercarriage)</h3>
+                            <p class="text-gray-400 mb-8 leading-loose">Kenyamanan berkendara sangat bergantung pada kondisi suspensi dan kaki-kaki. Kami menyediakan layanan Spooring 3D dengan akurasi laser tinggi serta Balancing untuk menghilangkan getaran pada setir di kecepatan tinggi. Penggantian shockbreaker, bushing, dan ban dari merk ternama tersedia lengkap di stok kami.</p>
+                            <button onclick="sendWhatsApp('Halo, saya ingin menanyakan katalog ban dan ketersediaan stok di Garage A3K.')" class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">Lihat Katalog Ban</button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="h-40 bg-gray-800 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
+                                <i data-lucide="disc" class="mb-4 text-rose-500"></i>
+                                <span class="text-xs font-bold uppercase tracking-widest">Rem & Disc</span>
+                            </div>
+                            <div class="h-40 bg-gray-800 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
+                                <i data-lucide="wind" class="mb-4 text-rose-500"></i>
+                                <span class="text-xs font-bold uppercase tracking-widest">Sistem AC</span>
+                            </div>
+                            <div class="h-40 bg-gray-800 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
+                                <i data-lucide="droplets" class="mb-4 text-rose-500"></i>
+                                <span class="text-xs font-bold uppercase tracking-widest">Oli & Cairan</span>
+                            </div>
+                            <div class="h-40 bg-gray-800 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
+                                <i data-lucide="sparkles" class="mb-4 text-rose-500"></i>
+                                <span class="text-xs font-bold uppercase tracking-widest">Detailing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: TENTANG KAMI -->
+        <section id="about" class="page-content py-24 px-6 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h2 class="text-6xl font-black mb-8">Tentang <span class="text-rose-600">Garage A3K</span></h2>
+                    <p class="text-xl text-gray-600 font-medium italic">"Membangun Kepercayaan Melalui Presisi."</p>
+                </div>
+
+                <div class="space-y-12 text-lg text-gray-700 leading-relaxed text-justify" data-aos="fade-up">
+                    <p>Perjalanan Garage A3K dimulai dari sebuah workshop kecil di Saga, Kabupaten Tangerang. Pendiri kami melihat adanya kesenjangan antara bengkel umum yang seringkali kurang peralatan dan bengkel resmi yang biayanya sulit dijangkau banyak orang. Berbekal visi untuk memberikan alternatif terbaik, Garage A3K lahir sebagai jembatan: Kualitas bengkel resmi, transparansi bengkel mandiri.</p>
+
+                    <div class="grid md:grid-cols-2 gap-12 my-16">
+                        <div class="bg-gray-50 p-10 rounded-3xl">
+                            <h4 class="text-2xl font-bold mb-6">Misi Kami</h4>
+                            <p class="text-base text-gray-600">Menyediakan layanan otomotif yang menjunjung tinggi nilai kejujuran, akurasi teknis, dan kecepatan pengerjaan tanpa mengabaikan aspek keamanan fundamental kendaraan pelanggan.</p>
+                        </div>
+                        <div class="bg-rose-50 p-10 rounded-3xl">
+                            <h4 class="text-2xl font-bold mb-6">Visi 2030</h4>
+                            <p class="text-base text-gray-600">Menjadi pusat inovasi otomotif mandiri nomor satu di Tangerang dan Banten yang mampu menangani transisi energi dari mesin pembakaran internal (ICE) menuju kendaraan listrik sepenuhnya (EV).</p>
+                        </div>
+                    </div>
+
+                    <p>Kami bangga memiliki tim yang solid. Lebih dari 70% staf kami telah bersama kami selama lebih dari satu dekade. Loyalitas ini diterjemahkan ke dalam pengetahuan mendalam tentang sejarah kendaraan pelanggan tetap kami. Kami bukan sekadar bengkel; kami adalah partner perjalanan Anda yang siap siaga memastikan setiap kilometer yang Anda tempuh berlalu tanpa rasa khawatir.</p>
+
+                    <div class="border-t pt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div><p class="text-4xl font-black mb-2">15+</p><p class="text-xs uppercase font-bold text-gray-400">Tahun Berdiri</p></div>
+                        <div><p class="text-4xl font-black mb-2">25k+</p><p class="text-xs uppercase font-bold text-gray-400">Unit Terlayani</p></div>
+                        <div><p class="text-4xl font-black mb-2">45</p><p class="text-xs uppercase font-bold text-gray-400">Mekanik Handal</p></div>
+                        <div><p class="text-4xl font-black mb-2">4.9</p><p class="text-xs uppercase font-bold text-gray-400">Rating Google</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: GALERI -->
+        <section id="gallery" class="page-content py-24 px-6 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <div>
+                        <h2 class="text-5xl font-black mb-4">Galeri Projek</h2>
+                        <p class="text-gray-500">Melihat lebih dekat proses pengerjaan dan hasil akhir kendaraan pelanggan kami.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="bg-black text-white px-6 py-2 rounded-full text-sm font-bold">Semua</button>
+                        <button class="bg-white border px-6 py-2 rounded-full text-sm font-bold hover:border-black transition">Restorasi</button>
+                        <button class="bg-white border px-6 py-2 rounded-full text-sm font-bold hover:border-black transition">Servis</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden rounded-[2rem] h-[500px]" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1486006396113-ad75047f25a0?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Overhaul mesin mobil di Garage A3K Tangerang" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <h4 class="text-white text-xl font-bold mb-2">Overhaul Mesin V8</h4>
+                            <p class="text-gray-300 text-sm">Pengerjaan restorasi total performa mesin kendaraan premium.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="group relative overflow-hidden rounded-[2rem] h-[238px]" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Detailing mobil di Garage A3K Tangerang" loading="lazy">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white font-bold border-2 border-white px-6 py-2 rounded-full">Detailing</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-[2rem] h-[238px]" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36aeaf?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Spooring 3D mobil di Garage A3K Tangerang" loading="lazy">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white font-bold border-2 border-white px-6 py-2 rounded-full">Spooring 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-[2rem] h-[500px]" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Restorasi mobil klasik di Garage A3K Tangerang" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <h4 class="text-white text-xl font-bold mb-2">Restorasi BMW E30</h4>
+                            <p class="text-gray-300 text-sm">Pengerjaan restorasi klasik dengan mempertahankan keaslian komponen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-20 bg-white p-16 rounded-[3rem] text-center shadow-sm" data-aos="fade-up">
+                    <h3 class="text-3xl font-bold mb-8 italic text-gray-400">"Mobil saya kembali terasa seperti baru setelah dari Garage A3K. Diagnosa mereka sangat tepat dan transparan."</h3>
+                    <div class="flex flex-col items-center">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" class="w-20 h-20 rounded-full object-cover mb-4 border-4 border-rose-50 shadow-lg" alt="Testimoni pelanggan Garage A3K" loading="lazy">
+                        <p class="font-bold text-lg">Andrian Pratama</p>
+                        <p class="text-gray-400 text-sm">Pemilik Toyota Land Cruiser</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: PAKET SERVIS -->
+        <section id="pricing" class="page-content py-24 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-5xl font-black mb-6">Pilihan Paket Ekonomis</h2>
+                    <p class="text-gray-500">Servis rutin tanpa perlu khawatir tentang anggaran. Harga transparan sudah termasuk jasa dan pajak.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Paket 1 -->
+                    <div class="border-2 border-gray-100 p-10 rounded-[2.5rem] hover:border-black transition relative overflow-hidden group">
+                        <h4 class="text-xl font-bold mb-2">Light Maintenance</h4>
+                        <p class="text-gray-400 text-sm mb-8">Pengecekan rutin 5.000 KM</p>
+                        <div class="mb-10">
+                            <span class="text-4xl font-black">Rp 550.000</span>
+                        </div>
+                        <ul class="space-y-4 mb-12 text-gray-600 font-medium">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Ganti Oli Standar (4L)</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Pembersihan Filter Udara</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Cek 12 Komponen Vital</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Cuci & Vacuum Standard</li>
+                        </ul>
+                        <button onclick="sendWhatsApp('Halo Garage A3K, saya ingin booking paket: Light Maintenance (Rp 550.000)')" class="w-full py-4 border-2 border-black rounded-full font-bold group-hover:bg-black group-hover:text-white transition">Pilih Paket</button>
+                    </div>
+
+                    <!-- Paket 2 - Unggulan -->
+                    <div class="bg-black text-white p-12 rounded-[2.5rem] shadow-2xl relative transform md:scale-105 z-10">
+                        <div class="absolute top-8 right-8 bg-gold text-black px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter">Paling Laris</div>
+                        <h4 class="text-xl font-bold mb-2">Performance Plus</h4>
+                        <p class="text-gray-400 text-sm mb-8">Tune Up Lengkap 10.000 KM</p>
+                        <div class="mb-10">
+                            <span class="text-4xl font-black text-gold">Rp 1.450.000</span>
+                        </div>
+                        <ul class="space-y-4 mb-12 text-gray-300 font-medium">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-gold w-5 h-5"></i> Ganti Oli Full Sintetik</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-gold w-5 h-5"></i> Gurah Mesin (Carbon Clean)</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-gold w-5 h-5"></i> Scanning Digital Menyeluruh</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-gold w-5 h-5"></i> Spooring & Balancing</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-gold w-5 h-5"></i> Servis Rem 4 Roda</li>
+                        </ul>
+                        <button onclick="sendWhatsApp('Halo Garage A3K, saya ingin booking paket unggulan: Performance Plus (Rp 1.450.000)')" class="w-full py-4 bg-rose-600 rounded-full font-bold hover:bg-rose-700 transition">Booking Sekarang</button>
+                    </div>
+
+                    <!-- Paket 3 -->
+                    <div class="border-2 border-gray-100 p-10 rounded-[2.5rem] hover:border-black transition group">
+                        <h4 class="text-xl font-bold mb-2">Total Revival</h4>
+                        <p class="text-gray-400 text-sm mb-8">Servis Besar 40.000 KM</p>
+                        <div class="mb-10">
+                            <span class="text-4xl font-black">Rp 3.800.000</span>
+                        </div>
+                        <ul class="space-y-4 mb-12 text-gray-600 font-medium">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Kuras Oli Transmisi (ATF)</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Ganti Filter Bensin & AC</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Kuras Radiator Coolant</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-amber-500 w-5 h-5"></i> Penggantian Busi Iridium</li>
+                        </ul>
+                        <button onclick="sendWhatsApp('Halo Garage A3K, saya ingin booking paket besar: Total Revival (Rp 3.800.000)')" class="w-full py-4 border-2 border-black rounded-full font-bold group-hover:bg-black group-hover:text-white transition">Pilih Paket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 6: KONTAK -->
+        <section id="contact" class="page-content py-24 px-6 bg-slate-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-20">
+                    <div data-aos="fade-right">
+                        <h2 class="text-6xl font-black mb-10 leading-none">Ayo Bicara <br>Tentang <br><span class="text-rose-600">Mobil Anda.</span></h2>
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-6">
+                                <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="text-rose-600"></i></div>
+                                <div>
+                                    <h5 class="font-bold text-xl mb-1 text-gray-900">Lokasi Utama</h5>
+                                    <address class="not-italic text-gray-500 leading-relaxed">Saga, Kabupaten Tangerang, Banten 15610.<br>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Garage+A3K+Saga+Kabupaten+Tangerang+Banten+15610" target="_blank" rel="noopener" class="text-rose-600 font-semibold hover:underline">Buka di Google Maps</a></address>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6">
+                                <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center shrink-0"><i data-lucide="phone" class="text-rose-600"></i></div>
+                                <div>
+                                    <h5 class="font-bold text-xl mb-1 text-gray-900">Hubungi Kami</h5>
+                                    <p class="text-gray-500">Booking: <a href="tel:+62895321168652" class="hover:text-rose-600">+62 895-3211-68652</a><br>Emergency: <a href="tel:+62895321168652" class="hover:text-rose-600">+62 895-3211-68652</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6">
+                                <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center shrink-0"><i data-lucide="clock-3" class="text-rose-600"></i></div>
+                                <div>
+                                    <h5 class="font-bold text-xl mb-1 text-gray-900">Jam Layanan</h5>
+                                    <p class="text-gray-500">Senin - Sabtu: 08.00 - 18.00<br>Minggu: Khusus Perjanjian</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-12 rounded-[3rem] shadow-xl border border-gray-100" data-aos="fade-left">
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-black uppercase tracking-widest text-gray-400 mb-2">Nama</label>
+                                    <input id="formName" type="text" required class="w-full bg-gray-50 border-none rounded-2xl p-4 focus:ring-2 focus:ring-rose-500 outline-none" placeholder="Contoh: Budi Santoso">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-black uppercase tracking-widest text-gray-400 mb-2">WhatsApp</label>
+                                    <input id="formWA" type="tel" required class="w-full bg-gray-50 border-none rounded-2xl p-4 focus:ring-2 focus:ring-rose-500 outline-none" placeholder="08xx xxxx xxxx">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-black uppercase tracking-widest text-gray-400 mb-2">Mobil & Keluhan</label>
+                                <textarea id="formMessage" rows="5" required class="w-full bg-gray-50 border-none rounded-2xl p-4 focus:ring-2 focus:ring-rose-500 outline-none" placeholder="Sebutkan jenis mobil dan masalah yang dirasakan..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-black text-white py-5 rounded-2xl font-bold text-lg hover:bg-gray-800 transition shadow-lg shadow-gray-200">Kirim Jadwal Servis</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-20 px-6 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="text-center md:text-left">
+                <div class="text-xl font-black mb-4">GARAGE<span class="text-gold"> A3K</span></div>
+                <p class="text-gray-400 text-sm max-w-xs">Bengkel mobil di Saga, Kabupaten Tangerang. Dedikasi sepenuh hati untuk menjaga kendaraan Anda tetap di jalur yang aman dan efisien.</p>
+            </div>
+            <div class="flex gap-8 text-sm font-bold text-gray-400 uppercase tracking-widest">
+                <a href="#" class="hover:text-black">Instagram</a>
+                <a href="#" class="hover:text-black">Youtube</a>
+                <a href="#" class="hover:text-black">LinkedIn</a>
+            </div>
+            <p class="text-gray-300 text-xs tracking-tighter uppercase">© 2026 Garage A3K.</p>
+        </div>
+    </footer>
+
+    <script>
+        // CONFIGURATION: nomor WhatsApp tujuan (format internasional tanpa +)
+        const WHATSAPP_NUMBER = "62895321168652";
+
+        // AOS Animation
+        AOS.init({ duration: 1000, once: true });
+        lucide.createIcons();
+
+        /**
+         * Global function to send text to WhatsApp
+         */
+        function sendWhatsApp(message) {
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        /**
+         * Logic to handle the contact form submission
+         */
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('formName').value;
+            const wa = document.getElementById('formWA').value;
+            const message = document.getElementById('formMessage').value;
+
+            const fullMessage = `Halo Garage A3K, saya ingin membuat jadwal servis:\n\n*Nama:* ${name}\n*WA:* ${wa}\n*Keluhan:* ${message}`;
+
+            sendWhatsApp(fullMessage);
+        }
+
+        // Multi-Page Navigation Logic
+        function navigateTo(pageId) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => {
+                page.classList.remove('active');
+                if (page.id === pageId) {
+                    page.classList.add('active');
+                }
+            });
+
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('onclick') && link.getAttribute('onclick').includes(`'${pageId}'`)) {
+                    link.classList.add('active');
+                }
+            });
+
+            window.scrollTo(0, 0);
+            document.getElementById('mobile-overlay').classList.add('hidden');
+        }
+
+        // Mobile Menu Handling
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const closeBtn = document.getElementById('close-menu');
+
+        mobileBtn.addEventListener('click', () => mobileOverlay.classList.remove('hidden'));
+        closeBtn.addEventListener('click', () => mobileOverlay.classList.add('hidden'));
+
+        window.onload = () => navigateTo('home');
+    </script>
+</body>
+</html>
